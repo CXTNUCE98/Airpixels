@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "tagline": "Original Art",
+    "collections": "Gallery",
+    "featured": "Featured",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "New Collection 2024",
+    "title": {
+      "part1": "Beautiful",
+      "part2": "Artworks"
+    },
+    "subtitle": "Discover original paintings and prints from talented artists",
+    "stats": {
+      "artists": "Artists",
+      "artworks": "Artworks",
+      "original": "Original"
+    },
+    "cta": {
+      "primary": "Explore Gallery",
+      "secondary": "Our Story"
+    },
+    "badges": {
+      "authentic": "100% Original",
+      "shipping": "Free Shipping"
+    }
+  },
+  "collections": {
+    "subtitle": "Discover",
+    "title": "Our Collections",
+    "quickView": "Quick View",
+    "viewAll": "View All"
+  },
+  "artworks": {
+    "badges": {
+      "new": "New",
+      "bestseller": "Popular",
+      "limited": "Limited"
+    }
+  },
+  "featured": {
+    "subtitle": "Exclusive",
+    "title": "Featured Artworks",
+    "badge": "Limited Edition",
+    "product": {
+      "name": "Featured Artwork",
+      "description": "A stunning original piece with unique style and craftsmanship",
+      "price": "$520",
+      "cta": "Shop Now"
+    }
+  },
+  "about": {
+    "subtitle": "Our Story",
+    "title": "Bringing Art to Everyone",
+    "description": "We curate original artworks from talented artists around the world, making beautiful art accessible to all.",
+    "highlights": [
+      {
+        "title": "Original Works",
+        "description": "Every piece is 100% original with certificate of authenticity"
+      },
+      {
+        "title": "Support Artists",
+        "description": "Direct partnership with artists, fair compensation"
+      },
+      {
+        "title": "Quality Guaranteed",
+        "description": "Premium materials and craftsmanship guaranteed"
+      }
+    ],
+    "cta": "Learn More"
+  },
+  "contact": {
+    "subtitle": "Get in Touch",
+    "title": "Contact Us",
+    "description": "Leave your information and we'll get back to you with personalized consultation",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Your premier destination for original artwork. Bringing beautiful art to homes since 2024.",
+    "collections": {
+      "title": "Collections",
+      "classic": "Classic Art",
+      "modern": "Modern Art",
+      "abstract": "Abstract Art",
+      "limited": "Limited Editions"
+    },
+    "service": {
+      "title": "Customer Service",
+      "warranty": "Authenticity Guarantee",
+      "shipping": "Shipping & Framing",
+      "returns": "Returns Policy",
+      "faq": "FAQ"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "123 Art Street, Creative District",
+      "phone": "+84 123 456 789",
+      "email": "hello@airpixels.art"
+    },
+    "copyright": "© {year} Airpixels Art Shop. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "mobileMenu": {
+    "quickActions": "Quick Actions",
+    "theme": "Theme",
+    "language": "Language"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "tagline": "Tranh nghệ thuật",
+    "collections": "Bộ sưu tập",
+    "featured": "Nổi bật",
+    "about": "Về chúng tôi",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "badge": "Bộ sưu tập mới 2024",
+    "title": {
+      "part1": "Tác phẩm",
+      "part2": "Nghệ thuật"
+    },
+    "subtitle": "Khám phá tranh gốc từ các nghệ sĩ tài năng",
+    "stats": {
+      "artists": "Nghệ sĩ",
+      "artworks": "Tác phẩm",
+      "original": "Chính gốc"
+    },
+    "cta": {
+      "primary": "Xem bộ sưu tập",
+      "secondary": "Câu chuyện của chúng tôi"
+    },
+    "badges": {
+      "authentic": "100% Chính gốc",
+      "shipping": "Miễn phí vận chuyển"
+    }
+  },
+  "collections": {
+    "subtitle": "Khám phá",
+    "title": "Bộ Sưu Tập",
+    "quickView": "Xem nhanh",
+    "viewAll": "Xem tất cả"
+  },
+  "artworks": {
+    "badges": {
+      "new": "Mới",
+      "bestseller": "Bán chạy",
+      "limited": "Giới hạn"
+    }
+  },
+  "featured": {
+    "subtitle": "Độc quyền",
+    "title": "Tác Phẩm Nổi Bật",
+    "badge": "Phiên bản giới hạn",
+    "product": {
+      "name": "Tác phẩm nổi bật",
+      "description": "Một tác phẩm nghệ thuật gốc độc đáo và tinh xảo",
+      "price": "$520",
+      "cta": "Mua ngay"
+    }
+  },
+  "about": {
+    "subtitle": "Câu chuyện",
+    "title": "Mang Nghệ Thuật Đến Mọi Nhà",
+    "description": "Chúng tôi tuyển chọn tác phẩm nghệ thuật gốc từ các nghệ sĩ tài năng trên khắp thế giới, giúp nghệ thuật đẹp đẹp trở nên gần gũi hơn.",
+    "highlights": [
+      {
+        "title": "Tác phẩm gốc",
+        "description": "Mỗi tác phẩm đều 100% chính gốc kèm giấy chứng nhận"
+      },
+      {
+        "title": "Hỗ trợ nghệ sĩ",
+        "description": "Hợp tác trực tiếp với nghệ sĩ, thù lao công bằng"
+      },
+      {
+        "title": "Chất lượng đảm bảo",
+        "description": "Vật liệu cao cấp và tay nghề được đảm bảo"
+      }
+    ],
+    "cta": "Tìm hiểu thêm"
+  },
+  "contact": {
+    "subtitle": "Liên hệ",
+    "title": "Kết Nối Với Chúng Tôi",
+    "description": "Để lại thông tin, chúng tôi sẽ liên hệ tư vấn cho bạn",
+    "form": {
+      "name": "Họ tên",
+      "namePlaceholder": "Nguyễn Văn A",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com",
+      "message": "Tin nhắn",
+      "messagePlaceholder": "Nội dung tin nhắn...",
+      "submit": "Gửi tin nhắn"
+    }
+  },
+  "footer": {
+    "description": "Điểm đến hàng đầu cho tranh nghệ thuật gốc. Mang nghệ thuật đẹp đến mọi nhà từ 2024.",
+    "collections": {
+      "title": "Bộ sưu tập",
+      "classic": "Tranh Classic",
+      "modern": "Tranh Hiện Đại",
+      "abstract": "Tranh Trừ Tượng",
+      "limited": "Phiên bản giới hạn"
+    },
+    "service": {
+      "title": "Hỗ trợ khách hàng",
+      "warranty": "Chính sách bảo hành",
+      "shipping": "Vận chuyển & đóng khung",
+      "returns": "Đổi trả & hoàn tiền",
+      "faq": "Câu hỏi thường gặp"
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "address": "123 Đường Nghệ Thuật, Quận Sáng Tạo",
+      "phone": "+84 123 456 789",
+      "email": "hello@airpixels.art"
+    },
+    "copyright": "© {year} Airpixels Art Shop. Mọi quyền được bảo lưu.",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản sử dụng"
+  },
+  "mobileMenu": {
+    "quickActions": "Hành động nhanh",
+    "theme": "Giao diện",
+    "language": "Ngôn ngữ"
+  }
+}
