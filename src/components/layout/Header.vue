@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const isScrolled = ref(false)
 const showMobileMenu = ref(false)
-const { t } = useI18n()
 const localePath = useLocalePath()
 
 const handleScroll = () => {
@@ -10,30 +9,21 @@ const handleScroll = () => {
   }
 }
 
-// Smooth scroll to section
-const scrollToSection = (sectionId: string) => {
-  showMobileMenu.value = false
-  
-  if (process.client) {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      const headerOffset = 80
-      const elementPosition = element.getBoundingClientRect().top
-      const offsetPosition = elementPosition + window.scrollY - headerOffset
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      })
-    }
-  }
-}
-
 const navItems = [
-  { label: 'nav.collections', section: 'collections' },
-  { label: 'nav.featured', section: 'featured' },
-  { label: 'nav.about', section: 'about' },
-  { label: 'nav.contact', section: 'contact' }
+  { label: 'nav.home', href: '/' },
+  { label: 'nav.professional', href: '/professional' },
+  { label: 'nav.prints', href: '/prints' },
+  { label: 'nav.about', href: '/about' },
+  { label: 'nav.contact', href: '/contact' }
+]
+
+const socialLinks = [
+  { icon: 'bx bxl-instagram', href: '#', label: 'Instagram' },
+  { icon: 'bx bxl-facebook', href: '#', label: 'Facebook' },
+  { icon: 'bx bxl-youtube', href: '#', label: 'YouTube' },
+  { icon: 'bx bxl-linkedin', href: '#', label: 'LinkedIn' },
+  { icon: 'bx bxl-behance', href: '#', label: 'Behance' },
+  { icon: 'bx bxl-twitter', href: '#', label: 'Twitter' }
 ]
 
 onMounted(() => {
@@ -51,106 +41,109 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <header
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
-    :class="isScrolled ? 'py-2 bg-primary/95 backdrop-blur-xl shadow-2xl' : 'py-6 bg-transparent'"
-  >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-slate-950">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <NuxtLink
           :to="localePath('/')"
           class="flex items-center gap-3 group"
         >
-          <div class="relative">
-            <div class="w-12 h-12 border-2 border-gold-500 flex items-center justify-center transition-transform group-hover:rotate-12">
-              <span class="text-gold-500 font-heading font-bold text-xl">A</span>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <span class="text-2xl font-heading font-bold text-white tracking-wider">ART</span>
-            <span class="text-[10px] text-gold-500 tracking-[0.3em] uppercase">{{ t('nav.tagline') }}</span>
+          <!-- Owl logo circle -->
+          <div class="w-14 h-14 rounded-full border-2 border-slate-900 dark:border-white flex items-center justify-center group-hover:opacity-80 transition-opacity">
+            <svg class="w-8 h-8 text-slate-900 dark:text-white" viewBox="0 0 40 40" fill="currentColor">
+              <path d="M20 4C11.16 4 4 11.16 4 20s7.16 16 16 16 16-7.16 16-16S28.84 4 20 4zm-4 24c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm8 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm-4-6c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+            </svg>
           </div>
         </NuxtLink>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center gap-8">
-          <button
-            v-for="item in navItems"
-            :key="item.section"
-            @click="scrollToSection(item.section)"
-            class="text-white hover:text-gold-500 tracking-wider uppercase text-sm font-medium transition-colors relative group cursor-pointer bg-transparent border-none"
-          >
-            {{ t(item.label) }}
-            <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-gold-500 transition-all group-hover:w-full"></span>
-          </button>
-        </nav>
+        <!-- Desktop Navigation + Social -->
+        <div class="hidden lg:flex items-center gap-8">
+          <!-- Nav Links -->
+          <nav class="flex items-center gap-6">
+            <NuxtLink
+              v-for="(item, idx) in navItems"
+              :key="item.label"
+              :to="localePath(item.href)"
+              class="text-[11px] tracking-[0.15em] font-light uppercase text-slate-800 dark:text-slate-200 hover:text-slate-500 dark:hover:text-slate-400 transition-colors"
+            >
+              {{ $t(item.label) }}
+            </NuxtLink>
+          </nav>
 
-        <!-- Actions -->
-        <div class="flex items-center gap-2">
-          <!-- Theme Toggle -->
-          <BaseThemeToggle />
+          <!-- Divider -->
+          <div class="w-px h-4 bg-slate-300 dark:bg-slate-700"></div>
 
-          <!-- Language Switcher -->
-          <BaseLanguageSwitcher />
-
-          <!-- Mobile Menu Toggle -->
-          <button
-            @click="showMobileMenu = !showMobileMenu"
-            class="lg:hidden text-white hover:text-gold-500 transition-colors p-2"
-          >
-            <i v-if="!showMobileMenu" class='bx bx-menu text-3xl'></i>
-            <i v-else class='bx bx-x text-3xl'></i>
-          </button>
+          <!-- Social Icons -->
+          <div class="flex items-center gap-4">
+            <a
+              v-for="social in socialLinks"
+              :key="social.label"
+              :href="social.href"
+              :aria-label="social.label"
+              class="text-slate-800 dark:text-slate-200 hover:text-slate-500 dark:hover:text-slate-400 transition-colors"
+            >
+              <i :class="[social.icon, 'text-lg']"></i>
+            </a>
+          </div>
         </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          @click="showMobileMenu = !showMobileMenu"
+          class="lg:hidden text-slate-900 dark:text-white p-2"
+          :aria-label="showMobileMenu ? 'Close Menu' : 'Open Menu'"
+        >
+          <div class="w-6 h-5 relative flex flex-col justify-between">
+            <span
+              class="w-full h-0.5 bg-current transition-all duration-300"
+              :class="{ 'rotate-45 translate-y-2': showMobileMenu }"
+            ></span>
+            <span
+              class="w-full h-0.5 bg-current transition-all duration-300"
+              :class="{ 'opacity-0': showMobileMenu }"
+            ></span>
+            <span
+              class="w-full h-0.5 bg-current transition-all duration-300"
+              :class="{ '-rotate-45 -translate-y-2': showMobileMenu }"
+            ></span>
+          </div>
+        </button>
       </div>
     </div>
 
     <!-- Mobile Menu -->
     <Transition
-      enter-active-class="transition duration-500 ease-out"
-      enter-from-class="opacity-0 -translate-y-8"
+      enter-active-class="transition duration-300 ease-out"
+      enter-from-class="opacity-0 -translate-y-4"
       enter-to-class="opacity-100 translate-y-0"
-      leave-active-class="transition duration-300 ease-in"
+      leave-active-class="transition duration-200 ease-in"
       leave-from-class="opacity-100 translate-y-0"
-      leave-to-class="opacity-0 -translate-y-8"
+      leave-to-class="opacity-0 -translate-y-4"
     >
-      <div v-if="showMobileMenu" class="lg:hidden mt-4 bg-primary/98 backdrop-blur-xl border-t border-gold-500/20">
-        <nav class="max-w-7xl mx-auto px-4 py-8">
-          <!-- Navigation Links -->
-          <div class="space-y-6 mb-8">
-            <button
-              v-for="item in navItems"
-              :key="item.section"
-              @click="scrollToSection(item.section)"
-              class="block w-full text-left text-white hover:text-gold-500 tracking-wider uppercase text-lg font-medium transition-colors bg-transparent border-none cursor-pointer"
+      <div v-if="showMobileMenu" class="lg:hidden bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+        <nav class="px-6 py-8">
+          <NuxtLink
+            v-for="item in navItems"
+            :key="item.label"
+            :to="localePath(item.href)"
+            @click="showMobileMenu = false"
+            class="block py-4 text-xs tracking-widest uppercase text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors border-b border-slate-200 dark:border-slate-800"
+          >
+            {{ $t(item.label) }}
+          </NuxtLink>
+          
+          <!-- Mobile Social Icons -->
+          <div class="flex items-center gap-4 mt-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+            <a
+              v-for="social in socialLinks"
+              :key="social.label"
+              :href="social.href"
+              :aria-label="social.label"
+              class="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
             >
-              {{ t(item.label) }}
-            </button>
-          </div>
-
-          <!-- Divider -->
-          <div class="border-t border-gold-500/20 pt-8">
-            <p class="text-slate-400 text-sm mb-4 uppercase tracking-wider">{{ t('mobileMenu.quickActions') }}</p>
-            
-            <!-- Theme Toggle -->
-            <div class="flex items-center justify-between py-3 border-b border-slate-800">
-              <div class="flex items-center gap-3 text-white">
-                <i v-if="useColorMode().value === 'dark'" class='bx bx-sun text-xl text-gold-500'></i>
-                <i v-else class='bx bx-moon text-xl text-gold-500'></i>
-                <span class="text-sm">{{ t('mobileMenu.theme') }}</span>
-              </div>
-              <BaseThemeToggle />
-            </div>
-
-            <!-- Language Switcher -->
-            <div class="flex items-center justify-between py-3 border-b border-slate-800">
-              <div class="flex items-center gap-3 text-white">
-                <i class='bx bx-globe text-xl text-gold-500'></i>
-                <span class="text-sm">{{ t('mobileMenu.language') }}</span>
-              </div>
-              <BaseLanguageSwitcher />
-            </div>
+              <i :class="[social.icon, 'text-lg']"></i>
+            </a>
           </div>
         </nav>
       </div>

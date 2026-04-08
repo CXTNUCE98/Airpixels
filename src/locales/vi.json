@@ -1,119 +1,33 @@
 {
   "nav": {
-    "tagline": "Tranh nghệ thuật",
-    "collections": "Bộ sưu tập",
-    "featured": "Nổi bật",
-    "about": "Về chúng tôi",
+    "home": "Trang chủ",
+    "professional": "Chuyên nghiệp",
+    "prints": "Tác phẩm in",
+    "about": "Giới thiệu",
     "contact": "Liên hệ"
   },
-  "hero": {
-    "badge": "Bộ sưu tập mới 2024",
-    "title": {
-      "part1": "Tác phẩm",
-      "part2": "Nghệ thuật"
-    },
-    "subtitle": "Khám phá tranh gốc từ các nghệ sĩ tài năng",
-    "stats": {
-      "artists": "Nghệ sĩ",
-      "artworks": "Tác phẩm",
-      "original": "Chính gốc"
-    },
-    "cta": {
-      "primary": "Xem bộ sưu tập",
-      "secondary": "Câu chuyện của chúng tôi"
-    },
-    "badges": {
-      "authentic": "100% Chính gốc",
-      "shipping": "Miễn phí vận chuyển"
-    }
+  "services": {
+    "heading": "Airpixels Media Cung Cấp Gì",
+    "intro": "Nhiếp ảnh gia và đạo diễn thương mại Tobias Hägg (Airpixels) có trụ sở tại Stockholm, chuyên tạo ra những bức ảnh và phim vượt thời gian cho các thương hiệu coi trọng tính xác thực, thẩm mỹ và tác động.",
+    "recognition": "Cách tiếp cận nghệ thuật độc đáo của Tobias Hägg đã nhận được sự khen ngợi và công nhận trên toàn cảnh sáng tạo toàn cầu, thu hút sự chú ý của các thương hiệu nổi tiếng như Google, Apple và Volvo, cùng nhiều thương hiệu khác.",
+    "philosophy": "Tại Airpixelsmedia, chúng tôi tin rằng nhiếp ảnh và phim là những công cụ mạnh mẽ để thể hiện tính cách, giá trị và bản sắc của thương hiệu. Cho dù thông qua những khoảnh khắc lifestyle quyến rũ, sản xuất thương mại cao cấp hay góc nhìn trên không độc đáo, chúng tôi tạo ra nội dung gây tiếng vang và kết nối chân thực giữa câu chuyện của bạn và khán giả.",
+    "storytelling": "Chúng tôi sống để kể những câu chuyện thực. Những câu chuyện được xây dựng từ khoảnh khắc, con người và địa điểm thực sự quan trọng. Chúng tôi tin rằng hình ảnh tuyệt vời bắt đầu từ ý định, không phải xu hướng. Thông qua nhiếp ảnh và phim, Tobias Hägg và nhóm của ông làm việc chặt chẽ với các thương hiệu để tạo ra những câu chuyện trung thực, bền vững. Tác phẩm cảm thấy chân thực, đứng trước thử thách của thời gian và kết nối vượt xa bề mặt. Không chỉ là hình ảnh, mà là những câu chuyện bạn muốn quay lại.",
+    "cta": "Hãy cùng khám phá Hành Trình Sáng Tạo."
   },
-  "collections": {
-    "subtitle": "Khám phá",
-    "title": "Bộ Sưu Tập",
-    "quickView": "Xem nhanh",
-    "viewAll": "Xem tất cả"
-  },
-  "artworks": {
-    "badges": {
-      "new": "Mới",
-      "bestseller": "Bán chạy",
-      "limited": "Giới hạn"
-    }
-  },
-  "featured": {
-    "subtitle": "Độc quyền",
-    "title": "Tác Phẩm Nổi Bật",
-    "badge": "Phiên bản giới hạn",
-    "product": {
-      "name": "Tác phẩm nổi bật",
-      "description": "Một tác phẩm nghệ thuật gốc độc đáo và tinh xảo",
-      "price": "$520",
-      "cta": "Mua ngay"
-    }
-  },
-  "about": {
-    "subtitle": "Câu chuyện",
-    "title": "Mang Nghệ Thuật Đến Mọi Nhà",
-    "description": "Chúng tôi tuyển chọn tác phẩm nghệ thuật gốc từ các nghệ sĩ tài năng trên khắp thế giới, giúp nghệ thuật đẹp đẹp trở nên gần gũi hơn.",
-    "highlights": [
-      {
-        "title": "Tác phẩm gốc",
-        "description": "Mỗi tác phẩm đều 100% chính gốc kèm giấy chứng nhận"
-      },
-      {
-        "title": "Hỗ trợ nghệ sĩ",
-        "description": "Hợp tác trực tiếp với nghệ sĩ, thù lao công bằng"
-      },
-      {
-        "title": "Chất lượng đảm bảo",
-        "description": "Vật liệu cao cấp và tay nghề được đảm bảo"
-      }
-    ],
-    "cta": "Tìm hiểu thêm"
-  },
-  "contact": {
-    "subtitle": "Liên hệ",
-    "title": "Kết Nối Với Chúng Tôi",
-    "description": "Để lại thông tin, chúng tôi sẽ liên hệ tư vấn cho bạn",
-    "form": {
-      "name": "Họ tên",
-      "namePlaceholder": "Nguyễn Văn A",
-      "email": "Email",
-      "emailPlaceholder": "email@example.com",
-      "message": "Tin nhắn",
-      "messagePlaceholder": "Nội dung tin nhắn...",
-      "submit": "Gửi tin nhắn"
-    }
+  "newsletter": {
+    "heading": "Ghi Chú Thực Địa Bởi Airpixels",
+    "description": "Mỗi tháng một lần, tôi chia sẻ một cách trung thực và không lọc về những câu chuyện và suy ngẫm từ cuộc sống trên đường và sau ống kính với tư cách là Nhiếp Ảnh Gia & Quay Phim Chuyên Nghiệp. Mọi thứ từ phong cảnh xa xôi đến sản xuất khách hàng và thông tin sáng tạo.",
+    "emailPlaceholder": "Địa chỉ Email",
+    "submit": "Đăng Ký",
+    "disclaimer": "Bạn có thể hủy đăng ký bất cứ lúc nào. Nhưng tôi nghĩ bạn sẽ muốn ở lại.",
+    "thankYou": "Cảm ơn bạn!"
   },
   "footer": {
-    "description": "Điểm đến hàng đầu cho tranh nghệ thuật gốc. Mang nghệ thuật đẹp đến mọi nhà từ 2024.",
-    "collections": {
-      "title": "Bộ sưu tập",
-      "classic": "Tranh Classic",
-      "modern": "Tranh Hiện Đại",
-      "abstract": "Tranh Trừ Tượng",
-      "limited": "Phiên bản giới hạn"
-    },
-    "service": {
-      "title": "Hỗ trợ khách hàng",
-      "warranty": "Chính sách bảo hành",
-      "shipping": "Vận chuyển & đóng khung",
-      "returns": "Đổi trả & hoàn tiền",
-      "faq": "Câu hỏi thường gặp"
-    },
-    "contact": {
-      "title": "Liên hệ",
-      "address": "123 Đường Nghệ Thuật, Quận Sáng Tạo",
-      "phone": "+84 123 456 789",
-      "email": "hello@airpixels.art"
-    },
-    "copyright": "© {year} Airpixels Art Shop. Mọi quyền được bảo lưu.",
-    "privacy": "Chính sách bảo mật",
-    "terms": "Điều khoản sử dụng"
-  },
-  "mobileMenu": {
-    "quickActions": "Hành động nhanh",
-    "theme": "Giao diện",
-    "language": "Ngôn ngữ"
+    "copyright": "Mọi Quyền Được Bảo Lưu © Airpixelsmedia AB {year}",
+    "privacyPolicy": "Chính Sách Bảo Mật",
+    "contact": "Liên Hệ",
+    "prints": "Tác Phẩm In & Nghệ Thuật",
+    "about": "Giới Thiệu",
+    "journal": "Tạp Chí"
   }
 }

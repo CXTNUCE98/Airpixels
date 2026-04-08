@@ -10,66 +10,63 @@ useHead({
 
 <template>
   <NuxtLayout>
-    <NuxtLoadingIndicator color="#D4AF37" />
+    <NuxtLoadingIndicator color="#000000" />
     <NuxtPage />
   </NuxtLayout>
 </template>
 
 <style>
-/* Global styles */
+/* Global styles - Minimalist photography portfolio */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-white;
-  font-family: 'Inter', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-}
-
-/* Page transitions */
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(5px);
-}
-
-/* View Transitions - circular reveal */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-
-::view-transition-old(root) {
-  z-index: 1;
-}
-::view-transition-new(root) {
-  z-index: 9999;
+  @apply bg-white dark:bg-slate-950 text-slate-900 dark:text-white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-primary;
+  @apply bg-slate-100 dark:bg-slate-900;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gold-500;
-  border-radius: 5px;
+  @apply bg-slate-400 dark:bg-slate-600;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gold-400;
+  @apply bg-slate-500 dark:bg-slate-500;
+}
+
+/* Zoom cursor */
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+.cursor-zoom-in:active {
+  cursor: zoom-out;
+}
+
+/* Scroll reveal animation base */
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+.translate-y-8 {
+  transform: translateY(2rem);
 }
 </style>

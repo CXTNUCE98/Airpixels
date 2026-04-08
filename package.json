@@ -10,8 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@iconify-json/carbon": "^1.2.16",
     "@nuxtjs/i18n": "^10.2.1",
+    "boxicons": "^2.1.4",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"

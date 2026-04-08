@@ -7,21 +7,21 @@ export default defineNuxtConfig({
   srcDir: "src/",
 
   components: [
-    { path: "~/components/common", prefix: "Base" },
+    { path: "~/components", prefix: "" },
     { path: "~/components/layout", prefix: "Layout" },
     { path: "~/components/sections", prefix: "" },
   ],
 
   imports: {
-    dirs: ["constants", "composables"],
+    dirs: ["composables", "composables/*.ts"],
   },
 
   app: {
     head: {
-      title: "Airpixels - Art Shop",
+      title: "Airpixels Media - Photography & Film",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: "Discover and buy beautiful artwork. Browse our curated collection of original paintings and prints." },
+        { name: "description", content: "Stockholm-based commercial photographer crafting timeless photography and film for brands that value authenticity." },
       ],
     },
     baseURL: "/",
@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     ],
   },
 
-  css: ["@unocss/reset/tailwind.css"],
+  css: ["@unocss/reset/tailwind.css", "boxicons/css/boxicons.min.css"],
 
   compatibilityDate: "2025-04-15",
 });
